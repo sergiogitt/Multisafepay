@@ -1,0 +1,10 @@
+header{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.active{
+    color: #00ABEE !important;
+    font-weight: bold !important;
+}
