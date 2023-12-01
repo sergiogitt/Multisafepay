@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import CustomerInfo from './components/CustomerInfo';
 import TransactionInfo from './components/TransactionInfo';
@@ -56,11 +56,14 @@ function App() {
         Loading...
       </Spinner></div>
     ) : (<Routes>
-      <Route path="/Multisafepay/" element={<Ewallet data={data} />} />
+
+      <Route path="/Multisafepay/ewallet" element={<Ewallet data={data} />} />
       <Route path="/Multisafepay/customerInfo" element={<CustomerInfo data={data} />} />
       <Route path="/Multisafepay/paymentDetails" element={<PaymentDetails data={data} />} />
       <Route path="/Multisafepay/shoppingCart" element={<ShoppingCart data={data} />} />
       <Route path="/Multisafepay/transactionInfo" element={<TransactionInfo data={data} />} />
+      <Route path='*' element={<Navigate to='/Multisafepay/ewallet' />} />
+      
     </Routes>)}
           
         </div>

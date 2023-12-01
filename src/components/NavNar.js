@@ -7,7 +7,7 @@ function Navnar() {
     <Navbar color="light" light expand="md">
       <Nav className="mr-auto" navbar>
         <NavItem>
-          <NavLink className="nav-link" exact to="/Multisafepay/" >Ewallet</NavLink>
+          <NavLink className="nav-link" exact to="/Multisafepay/ewallet" >Ewallet</NavLink>
         </NavItem>
         <NavItem>
           <NavLink className="nav-link" to="/Multisafepay/customerInfo" >Customer Info</NavLink>
