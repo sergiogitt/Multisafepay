@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.1d831e7d.css",
-    "main.js": "/static/js/main.c51cc7d2.js",
-    "static/js/787.3fc5ec07.chunk.js": "/static/js/787.3fc5ec07.chunk.js",
-    "index.html": "/index.html",
-    "main.1d831e7d.css.map": "/static/css/main.1d831e7d.css.map",
-    "main.c51cc7d2.js.map": "/static/js/main.c51cc7d2.js.map",
-    "787.3fc5ec07.chunk.js.map": "/static/js/787.3fc5ec07.chunk.js.map"
+    "main.css": "/Multisafepay/static/css/main.1d831e7d.css",
+    "main.js": "/Multisafepay/static/js/main.244bbcd7.js",
+    "static/js/787.3fc5ec07.chunk.js": "/Multisafepay/static/js/787.3fc5ec07.chunk.js",
+    "index.html": "/Multisafepay/index.html",
+    "main.1d831e7d.css.map": "/Multisafepay/static/css/main.1d831e7d.css.map",
+    "main.244bbcd7.js.map": "/Multisafepay/static/js/main.244bbcd7.js.map",
+    "787.3fc5ec07.chunk.js.map": "/Multisafepay/static/js/787.3fc5ec07.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1d831e7d.css",
-    "static/js/main.c51cc7d2.js"
+    "static/js/main.244bbcd7.js"
   ]
 }
