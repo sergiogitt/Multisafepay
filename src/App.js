@@ -27,8 +27,8 @@ function App() {
 
     const xhr = new XMLHttpRequest();
     //Evistar CORS con URL
-    const url = 'https://cors-anywhere.herokuapp.com/https://testapi.multisafepay.com/ewx/';
-    xhr.open('POST', url, true);
+    const url = 'response.txt';
+    xhr.open('GET', url, true);
     xhr.setRequestHeader('Content-Type', 'text/xml;charset=UTF-8');
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {

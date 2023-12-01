@@ -34,7 +34,7 @@ function ShoppingCart(props) {
         {items.map((item) => (
        <Card key={item.key} className="mb-4">
           <CardBody>
-            <CardTitle>{item.name}</CardTitle>
+            <CardTitle tag="h5">{item.name}</CardTitle>
             <CardText>
               <strong>Description:</strong> {item.description}<br />
               <strong>Price:</strong> {item.price} {item.currency}<br />
