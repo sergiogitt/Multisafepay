@@ -3,7 +3,7 @@ function Header() {
     return (
     <header>
         <div>
-            <img src="assets/multisafepay-logo.svg"></img>
+            <img alt="Logo" src="assets/multisafepay-logo.svg"></img>
         </div>
     </header>
     );
