@@ -5,7 +5,6 @@ import { Navbar, Nav, NavItem } from 'reactstrap';
 function Navnar() {
   return (
     <Navbar color="light" light expand="md">
-
       <Nav className="mr-auto" navbar>
         <NavItem>
           <NavLink className="nav-link" exact to="/" >Ewallet</NavLink>
