@@ -36,6 +36,8 @@ function Ewallet(props) {
   }, [props.data]);
 
   function formatDateTime(dateTimeString) {
+    if(dateTimeString=="")
+      return;
     let year = dateTimeString.substring(0, 4);
     let month = dateTimeString.substring(4, 6);
     let day = dateTimeString.substring(6, 8);
