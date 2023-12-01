@@ -7,19 +7,19 @@ function Navnar() {
     <Navbar color="light" light expand="md">
       <Nav className="mr-auto" navbar>
         <NavItem>
-          <NavLink className="nav-link" exact to="/" >Ewallet</NavLink>
+          <NavLink className="nav-link" exact to="/Multisafepay/" >Ewallet</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink className="nav-link" to="/customerInfo" >Customer Info</NavLink>
+          <NavLink className="nav-link" to="/Multisafepay/customerInfo" >Customer Info</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink className="nav-link" to="/paymentDetails" >Payment Details</NavLink>
+          <NavLink className="nav-link" to="/Multisafepay/paymentDetails" >Payment Details</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink className="nav-link" to="/shoppingCart" >Shopping Cart</NavLink>
+          <NavLink className="nav-link" to="/Multisafepay/shoppingCart" >Shopping Cart</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink className="nav-link" to="/transactionInfo" >Transaction Info</NavLink>
+          <NavLink className="nav-link" to="/Multisafepay/transactionInfo" >Transaction Info</NavLink>
         </NavItem>
       </Nav>
     </Navbar>
