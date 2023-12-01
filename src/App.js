@@ -7,7 +7,7 @@ import Ewallet from './components/Ewallet';
 import Navnar from './components/NavNar';
 import PaymentDetails from './components/PaymentDetails';
 import ShoppingCart from './components/ShoppingCart';
-import { Navbar, Spinner } from 'reactstrap';
+import { Spinner } from 'reactstrap';
 
 function App() {
   const [data,setData] = useState(null);
@@ -27,8 +27,8 @@ function App() {
 
     const xhr = new XMLHttpRequest();
     //Evistar CORS con URL
-    const url = 'response.txt';
-    xhr.open('GET', url, true);
+    const url = 'https://cors-anywhere.herokuapp.com/https://testapi.multisafepay.com/ewx/';
+    xhr.open('POST', url, true);
     xhr.setRequestHeader('Content-Type', 'text/xml;charset=UTF-8');
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
