@@ -56,11 +56,11 @@ function App() {
         Loading...
       </Spinner></div>
     ) : (<Routes>
-      <Route path="/" element={<Ewallet data={data} />} />
-      <Route path="/customerInfo" element={<CustomerInfo data={data} />} />
-      <Route path="/paymentDetails" element={<PaymentDetails data={data} />} />
-      <Route path="/shoppingCart" element={<ShoppingCart data={data} />} />
-      <Route path="/transactionInfo" element={<TransactionInfo data={data} />} />
+      <Route path="/Multisafepay/" element={<Ewallet data={data} />} />
+      <Route path="/Multisafepay/customerInfo" element={<CustomerInfo data={data} />} />
+      <Route path="/Multisafepay/paymentDetails" element={<PaymentDetails data={data} />} />
+      <Route path="/Multisafepay/shoppingCart" element={<ShoppingCart data={data} />} />
+      <Route path="/Multisafepay/transactionInfo" element={<TransactionInfo data={data} />} />
     </Routes>)}
           
         </div>
