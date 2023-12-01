@@ -7,9 +7,11 @@ import Ewallet from './components/Ewallet';
 import Navnar from './components/NavNar';
 import PaymentDetails from './components/PaymentDetails';
 import ShoppingCart from './components/ShoppingCart';
+import { Navbar, Spinner } from 'reactstrap';
 
 function App() {
   const [data,setData] = useState(null);
+  const [loading,setLoading] = useState(true);
   useEffect(() => {
     const xmlData = `<?xml version="1.0" encoding="UTF-8"?>
     <status ua="custom-1.1">
@@ -32,31 +34,40 @@ function App() {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
           setData(this.response);
+          
         } else {
           console.error('Error al realizar la petición:', xhr.statusText);
         }
       }
+      setLoading(false);
     };
 
     xhr.send(xmlData);
   }, []);
-
   return (
-    <Router>
-      <div className="App">
-        <Header />
-        <Navnar />
-        {/* ROUTING */}
-        <Routes>
-          <Route path="/" element={<Ewallet data={data}/>} />
-          <Route path="/customerInfo" element={<CustomerInfo data={data}/>} />
-          <Route path="/paymentDetails" element={<PaymentDetails data={data}/>} />
-          <Route path="/shoppingCart" element={<ShoppingCart data={data}/>} />
-          <Route path="/transactionInfo" element={<TransactionInfo data={data}/>} />
-        </Routes>
-      </div>
-    </Router>
-  );
+    
+      <Router>
+        <div className="App">
+          <Header />
+          <Navnar />
+          {/* ROUTING */}
+          { loading ? (<div className="d-flex justify-content-center align-items-center" style={{ marginTop: '4rem' }}>
+      <Spinner className=''>
+        Loading...
+      </Spinner></div>
+    ) : (<Routes>
+      <Route path="/" element={<Ewallet data={data} />} />
+      <Route path="/customerInfo" element={<CustomerInfo data={data} />} />
+      <Route path="/paymentDetails" element={<PaymentDetails data={data} />} />
+      <Route path="/shoppingCart" element={<ShoppingCart data={data} />} />
+      <Route path="/transactionInfo" element={<TransactionInfo data={data} />} />
+    </Routes>)}
+          
+        </div>
+      </Router>
+    )
+  
+  
 }
 
 export default App;
