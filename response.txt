@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<status result="ok">
+	<ewallet>
+		<id>9388052</id>
+		<status>completed</status>
+		<financialstatus>uncleared</financialstatus>
+		<fastcheckout>NO</fastcheckout>
+		<created>20231130162428</created>
+		<modified>20231130162428</modified>
+		<reasoncode/>
+		<reason/>
+	</ewallet>
+	<customer>
+		<amount>37485</amount>
+		<currency>EUR</currency>
+		<account/>
+		<locale>nl_NL</locale>
+		<firstname>Test</firstname>
+		<lastname>Rejected</lastname>
+		<address1>Hogehilweg</address1>
+		<address2/>
+		<housenumber>8</housenumber>
+		<zipcode>1101CC</zipcode>
+		<city>Amsterdam</city>
+		<state/>
+		<country>NL</country>
+		<countryname/>
+		<phone1>0612345678</phone1>
+		<phone2/>
+		<email>example@multisafepay.com</email>
+	</customer>
+	<customer-delivery/>
+	<transaction>
+		<id>apitool_sergio_romero_1</id>
+		<recurringid/>
+		<currency>EUR</currency>
+		<amount>37485</amount>
+		<cost/>
+		<description>Test Order Description</description>
+		<var1/>
+		<var2/>
+		<var3/>
+		<items>&lt;table border="0" cellpadding="5" width="100%"&gt;
+&lt;tr&gt;
+&lt;th width="10%"&gt;&lt;font size="2" face="Verdana"&gt;Quantity &lt;/font&gt;&lt;/th&gt;
+&lt;th align="left"&gt;&lt;/th&gt;
+&lt;th align="left"&gt;&lt;font size="2" face="Verdana"&gt;Details &lt;/font&gt;&lt;/th&gt;
+&lt;th width="19%" align="right"&gt;&lt;font size="2" face="Verdana"&gt;Price &lt;/font&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;font size="2" face="Verdana"&gt;3&lt;/font&gt;&lt;/td&gt;
+&lt;td width="6%"&gt;&lt;/td&gt;
+&lt;td width="65%"&gt;&lt;font size="2" face="Verdana"&gt;Geometric Candle Holders&lt;/font&gt;&lt;/td&gt;
+&lt;td align="right"&gt;&amp;euro;&lt;font size="2" face="Verdana"&gt;90.00&lt;/font&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;font size="2" face="Verdana"&gt;1&lt;/font&gt;&lt;/td&gt;
+&lt;td width="6%"&gt;&lt;/td&gt;
+&lt;td width="65%"&gt;&lt;font size="2" face="Verdana"&gt;Nice apple&lt;/font&gt;&lt;/td&gt;
+&lt;td align="right"&gt;&amp;euro;&lt;font size="2" face="Verdana"&gt;35.00&lt;/font&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align="center"&gt;&lt;font size="2" face="Verdana"&gt;1&lt;/font&gt;&lt;/td&gt;
+&lt;td width="6%"&gt;&lt;/td&gt;
+&lt;td width="65%"&gt;&lt;font size="2" face="Verdana"&gt;Flat Rate - Fixed&lt;/font&gt;&lt;/td&gt;
+&lt;td align="right"&gt;&amp;euro;&lt;font size="2" face="Verdana"&gt;10.00&lt;/font&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr bgcolor="#E9F1F7"&gt;
+&lt;td colspan="3" align="right"&gt;&lt;font size="2" face="Verdana"&gt;VAT:&lt;/font&gt;&lt;/td&gt;
+&lt;td align="right"&gt;&amp;euro;&lt;font size="2" face="Verdana"&gt;59.85&lt;/font&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr bgcolor="#E9F1F7"&gt;
+&lt;td colspan="3" align="right"&gt;&lt;font size="2" face="Verdana"&gt;Total:&lt;/font&gt;&lt;/td&gt;
+&lt;td align="right"&gt;&amp;euro;&lt;font size="2" face="Verdana"&gt;374.85&lt;/font&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</items>
+		<amountrefunded>0</amountrefunded>
+	</transaction>
+	<paymentdetails>
+		<type>AFTERPAY</type>
+		<accountid>1970-07-10</accountid>
+		<accountholdername/>
+		<externaltransactionid>2e671942-a058-4f1e-bd5c-d7226746f53f</externaltransactionid>
+		<last4/>
+		<cardexpirydate/>
+	</paymentdetails>
+	<costs/>
+	<checkoutdata version="0.1">
+		<shopping-cart>
+			<items>
+				<item>
+					<item-name>Geometric Candle Holders</item-name>
+					<item-description/>
+					<unit-price currency="EUR">90</unit-price>
+					<quantity>3</quantity>
+					<merchant-item-id>1111</merchant-item-id>
+					<tax-table-selector>BTW21</tax-table-selector>
+					<item-weight unit="KG" value="12"/>
+				</item>
+				<item>
+					<item-name>Nice apple</item-name>
+					<item-description/>
+					<unit-price currency="EUR">35</unit-price>
+					<quantity>1</quantity>
+					<merchant-item-id>666666</merchant-item-id>
+					<tax-table-selector>BTW9</tax-table-selector>
+					<item-weight unit="KG" value="20"/>
+				</item>
+				<item>
+					<item-name>Flat Rate - Fixed</item-name>
+					<item-description>Shipping</item-description>
+					<unit-price currency="EUR">10</unit-price>
+					<quantity>1</quantity>
+					<merchant-item-id>msp-shipping</merchant-item-id>
+					<tax-table-selector>none</tax-table-selector>
+					<item-weight unit="KG" value="0"/>
+				</item>
+			</items>
+		</shopping-cart>
+		<checkout-flow-support>
+			<merchant-checkout-flow-support>
+				<tax-tables>
+					<default-tax-table>
+						<tax-rules>
+							<default-tax-rule>
+								<shipping-taxed>true</shipping-taxed>
+								<rate>0.21</rate>
+							</default-tax-rule>
+						</tax-rules>
+					</default-tax-table>
+					<alternate-tax-tables>
+						<alternate-tax-table standalone="true" name="BTW21">
+							<alternate-tax-rules>
+								<alternate-tax-rule>
+									<rate>0.21</rate>
+								</alternate-tax-rule>
+							</alternate-tax-rules>
+						</alternate-tax-table>
+						<alternate-tax-table standalone="true" name="BTW9">
+							<alternate-tax-rules>
+								<alternate-tax-rule>
+									<rate>0.09</rate>
+								</alternate-tax-rule>
+							</alternate-tax-rules>
+						</alternate-tax-table>
+						<alternate-tax-table standalone="true" name="BTW6">
+							<alternate-tax-rules>
+								<alternate-tax-rule>
+									<rate>0.06</rate>
+								</alternate-tax-rule>
+							</alternate-tax-rules>
+						</alternate-tax-table>
+						<alternate-tax-table standalone="true" name="BTW0">
+							<alternate-tax-rules>
+								<alternate-tax-rule>
+									<rate>0</rate>
+								</alternate-tax-rule>
+							</alternate-tax-rules>
+						</alternate-tax-table>
+						<alternate-tax-table standalone="" name="none">
+							<alternate-tax-rules>
+								<alternate-tax-rule>
+									<rate>0</rate>
+								</alternate-tax-rule>
+							</alternate-tax-rules>
+						</alternate-tax-table>
+						<alternate-tax-table standalone="" name="FEE">
+							<alternate-tax-rules>
+								<alternate-tax-rule>
+									<rate>0</rate>
+								</alternate-tax-rule>
+							</alternate-tax-rules>
+						</alternate-tax-table>
+					</alternate-tax-tables>
+				</tax-tables>
+			</merchant-checkout-flow-support>
+		</checkout-flow-support>
+		<order-adjustment>
+			<adjustment-total currency="EUR">59.85</adjustment-total>
+			<total-tax currency="EUR">59.85</total-tax>
+		</order-adjustment>
+		<order-total currency="EUR">374.85</order-total>
+	</checkoutdata>
+</status>
+<!--msp-pve-tst-pay-02-->
