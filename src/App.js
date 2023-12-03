@@ -10,8 +10,8 @@ import ShoppingCart from './components/ShoppingCart';
 import { Spinner } from 'reactstrap';
 
 function App() {
-  const [data,setData] = useState(null);
-  const [loading,setLoading] = useState(true);
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     const xmlData = `<?xml version="1.0" encoding="UTF-8"?>
     <status ua="custom-1.1">
@@ -32,45 +32,47 @@ function App() {
     xhr.setRequestHeader('Content-Type', 'text/xml;charset=UTF-8');
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
-        if (xhr.status === 200) {
+        if (xhr.status === 200)
           setData(this.response);
-          
-        } else {
-          console.error('Error al realizar la petición:', xhr.statusText);
-        }
+        else
+          console.error('Error on API:', xhr.statusText);
       }
       setLoading(false);
     };
-
     xhr.send(xmlData);
   }, []);
   return (
-    
-      <Router>
-        <div className="App">
-          <Header />
-          <Navnar />
-          {/* ROUTING */}
-          { loading ? (<div className="d-flex justify-content-center align-items-center" style={{ marginTop: '4rem' }}>
-      <Spinner className=''>
-        Loading...
-      </Spinner></div>
-    ) : (<Routes>
-
-      <Route path="/Multisafepay/ewallet" element={<Ewallet data={data} />} />
-      <Route path="/Multisafepay/customerInfo" element={<CustomerInfo data={data} />} />
-      <Route path="/Multisafepay/paymentDetails" element={<PaymentDetails data={data} />} />
-      <Route path="/Multisafepay/shoppingCart" element={<ShoppingCart data={data} />} />
-      <Route path="/Multisafepay/transactionInfo" element={<TransactionInfo data={data} />} />
-      <Route path='*' element={<Navigate to='/Multisafepay/ewallet' />} />
-      
-    </Routes>)}
-          
-        </div>
-      </Router>
-    )
-  
-  
+    <Router>
+      <div className="App">
+        <Header />
+        <Navnar />
+        {loading ? (
+          <div className="d-flex justify-content-center align-items-center" style={{ marginTop: '4rem' }}>
+            <Spinner className=''>
+              Loading...
+            </Spinner>
+          </div>
+        ) : (
+          /* ROUTING */
+          <>
+            {data ? (
+              <Routes>
+                <Route path="/Multisafepay/ewallet" element={<Ewallet data={data} />} />
+                <Route path="/Multisafepay/customerInfo" element={<CustomerInfo data={data} />} />
+                <Route path="/Multisafepay/paymentDetails" element={<PaymentDetails data={data} />} />
+                <Route path="/Multisafepay/shoppingCart" element={<ShoppingCart data={data} />} />
+                <Route path="/Multisafepay/transactionInfo" element={<TransactionInfo data={data} />} />
+                <Route path='*' element={<Navigate to='/Multisafepay/ewallet' />} />
+              </Routes>
+            ) : (
+              <div className="alert alert-danger text-center" role="alert" style={{ width: 'max-content', margin: '1rem auto' }}>
+                Error getting data. Click <a href='https://cors-anywhere.herokuapp.com/corsdemo'>here</a> to request temporary access to the demo server.
+              </div>
+            )}
+          </>
+        )}
+      </div>
+    </Router>
+  )
 }
-
 export default App;
