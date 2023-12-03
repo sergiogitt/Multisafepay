@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Multisafepay/static/css/main.1d831e7d.css",
-    "main.js": "/Multisafepay/static/js/main.192ab1f1.js",
+    "main.js": "/Multisafepay/static/js/main.b769df9a.js",
     "static/js/787.3fc5ec07.chunk.js": "/Multisafepay/static/js/787.3fc5ec07.chunk.js",
     "index.html": "/Multisafepay/index.html",
     "main.1d831e7d.css.map": "/Multisafepay/static/css/main.1d831e7d.css.map",
-    "main.192ab1f1.js.map": "/Multisafepay/static/js/main.192ab1f1.js.map",
+    "main.b769df9a.js.map": "/Multisafepay/static/js/main.b769df9a.js.map",
     "787.3fc5ec07.chunk.js.map": "/Multisafepay/static/js/787.3fc5ec07.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1d831e7d.css",
-    "static/js/main.192ab1f1.js"
+    "static/js/main.b769df9a.js"
   ]
 }
