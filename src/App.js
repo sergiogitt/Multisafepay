@@ -65,8 +65,8 @@ function App() {
                 <Route path='*' element={<Navigate to='/Multisafepay/ewallet' />} />
               </Routes>
             ) : (
-              <div className="alert alert-danger text-center" role="alert" style={{ width: 'max-content', margin: '1rem auto' }}>
-                Error getting data. Click <a href='https://cors-anywhere.herokuapp.com/corsdemo'>here</a> to request temporary access to the demo server.
+              <div className="alert alert-danger text-center" role="alert"style={{ margin: '1rem 3.5rem'}} >
+                <p style={{ margin: '0rem'}}>Error getting data. Click <a href='https://cors-anywhere.herokuapp.com/corsdemo'>here</a> to request temporary access to the demo server.</p>
               </div>
             )}
           </>
