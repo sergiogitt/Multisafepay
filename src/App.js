@@ -68,7 +68,7 @@ function App() {
         <Form>
           <FormGroup row style={{ margin: '1rem' }}>
             <Label style={{ margin: '0 2rem' }} sm={2}>Select ID:</Label>
-            <Col sm={4}>
+            <Col sm={6}>
               <Input type="select" onChange={handleSelectChange} value={selectedId}>
                 {ids.map((id, index) => (
                   <option key={index} value={id}>
